@@ -11,7 +11,7 @@ public class Character {
     public string Class;
     public Vector2 Position { get; private set; }
 
-    public void Move( float deltaX, float deltaY ) {
+    public virtual void Move( float deltaX, float deltaY ) {
         Position = new Vector2( Position.X + deltaX, Position.Y + deltaY );
     }
 
